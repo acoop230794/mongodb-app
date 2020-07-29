@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    background-color: lightgrey;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.app{
+    height: 90vh;
+    width: 40%;
+    margin: 2% 30% 2% 30%;
+    background-color: rgba(0, 0, 0, 0.89);
+    box-shadow: 10px 10px 36px 16px rgba(112,112,112,1);
+    border-radius: 10px;
+    color: #fff;
+} 

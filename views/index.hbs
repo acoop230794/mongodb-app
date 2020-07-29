@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>MONGO DB APP</h1>
+    <div class="app">
+        <ul>
+            {{#each users}}
+
+                <h4>Username: {{this.username}}</h4>
+                <h4>Email: {{this.email}}</h4>
+
+                <form action="/update/{{this._id}}" method="GET">
+                    <button type='submit'>EDIT</button>
+                </form>
+
+                <form action="/{{this._id}}" method="POST">
+                    <button type="submit">DEL</button>
+                </form>
+
+            {{/each}}
+            <h4>{{dmessage}}</h4>
+            <a href="/">Home</a> <br>
+            <a href="/register">Register</a>
+        </ul>
+    </div>
+</body>
+</html>
